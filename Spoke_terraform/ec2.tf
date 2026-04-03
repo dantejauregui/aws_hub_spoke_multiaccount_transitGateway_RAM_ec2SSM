@@ -49,7 +49,7 @@ data "aws_ami" "amazon_linux" {
 
 resource "aws_instance" "test" {
   ami                         = data.aws_ami.amazon_linux.id
-  instance_type               = "t3.micro"
+  instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.private.id
   iam_instance_profile        = aws_iam_instance_profile.ssm_profile.name
   associate_public_ip_address = false
