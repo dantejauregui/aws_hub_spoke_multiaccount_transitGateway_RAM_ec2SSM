@@ -6,7 +6,8 @@ resource "aws_route_table" "private" {
 resource "aws_route" "internet" {
   route_table_id         = aws_route_table.private.id
   destination_cidr_block = "0.0.0.0/0"
-  transit_gateway_id     = var.tgw_id
+  # Private route table sends it to the Transit Gateway:
+  transit_gateway_id = var.tgw_id
 }
 
 resource "aws_route_table_association" "private_assoc" {
