@@ -7,6 +7,6 @@ variable "vpc_cidr" {
 }
 
 # CRITICAL: from NET account output
-variable "tgw_id" {
-  description = "Transit Gateway ID from NET account"
-}
+# variable "tgw_id" {
+#   description = "Transit Gateway ID from NET account"
+# }
