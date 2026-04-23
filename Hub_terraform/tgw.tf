@@ -8,6 +8,7 @@ resource "aws_ec2_transit_gateway" "tgw" {
   }
 }
 
+# transit_gateway_vpc_attachment has to be created in each of the 2 VPCs??:
 resource "aws_ec2_transit_gateway_vpc_attachment" "egress" {
   subnet_ids         = [aws_subnet.private.id]
   transit_gateway_id = aws_ec2_transit_gateway.tgw.id

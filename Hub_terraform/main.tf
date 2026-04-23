@@ -9,7 +9,7 @@ terraform {
 
 # Configure the AWS Provider using the "default" profile located in my ~/.aws/credentials, and adding Tags:
 provider "aws" {
-  profile = "default"
+  profile = "hub-dev-admin"
   region  = "eu-central-1"
 
   default_tags {

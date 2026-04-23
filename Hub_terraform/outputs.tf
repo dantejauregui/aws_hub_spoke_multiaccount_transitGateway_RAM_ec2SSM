@@ -13,3 +13,7 @@ output "nat_gateway_id" {
 output "tgw_route_table_id" {
   value = aws_ec2_transit_gateway_route_table.egress.id
 }
+
+output "instance_id" {
+  value = aws_instance.test_hub.id
+}
