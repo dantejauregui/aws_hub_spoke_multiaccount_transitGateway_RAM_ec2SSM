@@ -22,7 +22,7 @@ Internet
 ## Pre-requisite: 
 HUB account:
 - TransitGateway is created using Terraform in Hub account.
-- Then, TGW has to be Shared via AWS RAM (Resource Access Manager) with Spoke account. Follow this videoguide: https://www.youtube.com/watch?v=A_51fhOJfVY 
+- Then, TGW has to be Shared via AWS RAM (Resource Access Manager) with Spoke account. Follow this videoguide: https://www.youtube.com/watch?v=A_51fhOJfVY , https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html 
 
 Once Spoke resources are deployed, Hub account must accept the vpc_attachment just create by Spoke according Terraform code:
 
